@@ -1,0 +1,71 @@
+/* !typography */
+@include ms-list-output(0, 10, $base-font-size);
+@include establish-baseline;
+
+body {
+	font-family: "Proxima N W15 Reg", sans-serif;
+	font-weight: 400;
+	color: $primary;
+	@include improve-text-rendering;
+}
+
+h1, h2, h3, h4, h5, h6 {}
+
+
+h1 {
+	font-family:'Proxima N W15 Thin Reg';
+	text-transform: uppercase;
+	@include adjust-font-size-to(ms(7, $base-font-size), 2.4);
+	@include rhythm(0,0,0,0.1);
+}
+h2 {
+	font-family:'Proxima N W15 Thin Reg';
+	text-transform: uppercase;
+	@include adjust-font-size-to(ms(3, $base-font-size), 1.4);
+	@include rhythm(0,0,0,0.25);
+}
+h3 {
+	font-family:'Proxima N W15 Xbold';
+	@include adjust-font-size-to(ms(2, $base-font-size), 1);
+	@include rhythm(0,0,0,0);
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+		
+}
+h4 {
+	@include adjust-font-size-to(ms(0, $base-font-size));
+	@include rhythm(0,0,0,1);
+	text-transform: uppercase;
+}
+h5 {
+	@include adjust-font-size-to(ms(1, $base-font-size), 1.2);
+	@include rhythm(0,0,0,0.25);
+}
+h6 {
+	@include adjust-font-size-to(17px);
+}
+p {
+	@include adjust-font-size-to(ms(0, $base-font-size));
+	@include rhythm(0.5,0,0,1.5);
+}
+a {
+	color: $links;
+	text-decoration: none;
+	@include single-transition(all, 260ms, linear);
+}
+hr {
+	border: none;
+	border-top: 1px solid tint($black, 88%);
+	@include clearfix;
+	width: 100%;
+	margin-bottom: $spacer;
+	margin-top: $spacer/2;
+}
+table {
+	width: 100%;
+	td {
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: $spacer/4 0;
+	}
+}

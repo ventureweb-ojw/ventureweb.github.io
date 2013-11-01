@@ -1,0 +1,7 @@
+.button {
+	@include sassy-button("flat", $radius, 17px, $secondary, #ffaa1a, $white, "none");
+	@include sassy-button-structure($radius, 17px, $spacer/4);
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 4px;
+}

@@ -1,0 +1,41 @@
+/* --------------------------------------------------
+
+	VARIABLES
+	
+-------------------------------------------------- */
+/* !pump the baseline */
+$ratio				: minor-third();
+$base-font-size		: 14px;
+$base-line-height	: 22px;
+
+/* !colors */
+$black 				: #333838;
+$white				: #ffffff;
+$blue				: #008f9d;
+$blue-dark			: #00616a;
+$grey				: #c6c8ca;
+
+$primary			: $black;
+$secondary			: $grey;
+$links				: $blue;
+
+/* !fx */
+$duration			: 360ms;
+$ez-e				: ease-in-out;
+$radius 			: 6px;
+
+/* !grids, layout */
+$spacer				: 56px;
+$width				: 100%;
+$max-width			: 1100px;
+
+$total-width		: 100%;
+$column-width		: 100;
+$gutter-width		: 56px;
+$columns			: 12;
+
+/* !johnny utah */
+$phone				: (width 0px 599px);
+$phablet			: 600px;
+$tabtop				: 900px;
+$desktop			: 1280px;

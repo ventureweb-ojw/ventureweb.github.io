@@ -1,0 +1,333 @@
+/* --------------------------------------------------
+
+	prototype
+	jesse
+	
+-------------------------------------------------- */
+@import "base";
+
+/* --------------------------------------------------
+
+	MODULES
+	** responsive type overrides GO LAST!
+	
+-------------------------------------------------- */
+@import "modules/typography";
+@import "modules/layout";
+@import "modules/ui";
+@import "modules/misc";
+@import "modules/responsive_type";
+
+
+/* -------------------------------------------------- */
+body {
+	background: #000;
+	height: 100%;
+}
+// navigation layout
+.viewport {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	@include perspective(1500px);
+	@include enable-hardware-acceleration;
+	.menu {
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		left: 0;
+		visibility: hidden;
+		width: 300px;
+		height: 100%;
+		opacity: 1;
+		@include single-transition(all, $duration, $ez-e);
+		@include transform (translate3d(50%, 0, 0));
+	}
+	.stage {
+		position: relative;
+		z-index: 1;
+		left: 0;
+		height: 100%;
+		@include single-transition(all, $duration, $ez-e);
+		@include transform-style(preserve-3d);
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,0.85);
+			content: '';
+			opacity: 0;
+			@include single-transition(all, $duration, $ez-e);
+		}
+		.main {
+			background: $white;
+			position: relative;
+			z-index: 2;
+		}
+	}
+	
+	&.open {
+		overflow: hidden;
+		height: 100vh;
+		.menu {
+			visibility: visible;
+			@include single-transition(all, $duration, $ez-e);
+			@include transform (translate3d(0px, 0, 0));
+		}
+		.stage {
+			
+			@include transform (translate3d(300px, 0, 0));
+		}
+		.stage::after {
+			z-index: 8;
+			opacity: 1;
+		}
+	}
+	
+}
+// navigation styling
+.menu_toggle {
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	&::after {
+		background: $black;
+		color: $white;
+		width: $spacer;
+		height: $spacer;
+		display: table-cell;
+		vertical-align: middle;
+		font-family: "fontello";
+		content:"\e813";
+		font-size: 2em;
+		text-align: center;
+	}
+}	
+.menu {
+	background: $black;
+	ul {
+		list-style-type: none;
+		li {
+			height: $spacer;
+			display: table;
+			width: 100%;
+			a {
+				color: $white;
+				text-transform: uppercase;
+				padding: 0 $spacer/4;
+				width: 100%;
+				display: table-cell;
+				vertical-align: middle;
+				font-weight: bold;
+			}
+			&:nth-child(-n+4) {
+				width: 25%;
+				float: left;
+				font-size: 1.5em;
+			}
+		}
+	}
+
+}
+
+// layouts
+section {
+	@include clearfix;
+}
+header {
+	@include clearfix;
+	text-align: center;
+	padding: $spacer $spacer 0;
+
+}
+footer {
+	@include clearfix;
+	text-align: center;
+	padding: 0 $spacer $spacer;
+}
+.options {
+	list-style-type: none;
+	li {
+		height: $spacer;
+		display: table;
+		width: 100%;
+		border-top: 1px solid tint($black, 88%);
+		&:first-child {
+			border: none;
+		}
+		a {
+			color: $blue;
+			text-transform: uppercase;
+			width: 100%;
+			display: table-cell;
+			vertical-align: middle;
+			font-weight: bold;
+		}
+	}
+}
+.meta {
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	font-family:'Proxima N W15 Xbold';
+	margin-bottom: $spacer/4;
+}
+.panel {
+	position: relative;
+	background-size: cover;
+	background-position: 50% 50%;
+	float: left;
+	.container {
+		div {
+			padding: $spacer/2;
+		}
+	}
+}
+.hero {
+	background-color: $blue-dark;
+	color: $blue;
+	position: relative;
+	background-size: cover;
+	background-position: 50% 50%;
+	//@include intrinsic-ratio(2.35);
+	@include vert-centre((100vw/2.35));
+	width: 100vw;
+	height: (100vw/2.35);
+	display: block;
+	.container {
+		position: relative;
+		z-index: 2;
+	}
+	.logo {
+		color: $white;
+		img {
+			max-width: 180px;
+			margin-bottom: 2em;
+		}
+	}
+	.panel {
+		background-color: $white;
+		width: 50vw;
+		height: (50vw/1.175);
+		@include vert-centre((50vw/1.175));
+		&:nth-child(2) {
+			background-color: $blue-dark;
+			color: $white;
+			img {
+				margin-bottom: 2em;
+			}
+		}
+	}
+	&.full {
+		height: 100vh;
+	}
+}
+
+.strip, .features {
+	background-color: $black;
+	@include clearfix;
+	.panel {
+		background-color: $black;
+		color: $white;
+		* {
+			font-family: "Proxima N W15 Reg", sans-serif !important;
+		}
+		width: 20vw;
+		height: 20vw;
+		@include vert-centre(20vw);
+		@include single-transition(all, $duration, $ez-e);
+	}
+
+}
+body.home {
+	.strip {
+		
+	}
+	.features {
+		margin-bottom: $spacer*2;
+		.panel {
+			&:nth-child(1) {
+				width: 40vw;
+				height: 40vw;
+				@include vert-centre(40vw);
+			}
+		}
+	}
+}
+body.team {
+	.strip {
+		.panel {
+			width: 30vw;
+			@include filter(grayscale(90%));
+			&:hover {
+				@include filter(grayscale(0%));
+			}
+			&:nth-child(2n+1) {
+				width: 70vw;
+			}
+		}
+	}
+}
+body.work {
+	.alt {
+		margin-top: -$spacer/2;
+		.column {
+			border-right: 1px solid tint($black, 88%);
+			padding-top: $spacer/2;
+			h3 {
+				font-family:'Proxima N W15 Thin Reg';	
+			}
+			&:last-child {
+				border: none;
+			}
+		}
+	}
+}
+body.basic {
+	.hero {
+		margin-bottom: $spacer*2;
+	}
+}
+
+@include breakpoint($tabtop) {
+	.set {
+		.panel {
+			@include intrinsic-ratio(1, 25%);
+			&:nth-child(5n+1) {
+				@include intrinsic-ratio(1, 50%);
+			}
+		}
+	}
+}
+
+.bg {
+	position: absolute;
+	z-index: 0;
+	top: 0px;
+	bottom: 0px;
+	width: 100vw;
+	height: 100%;
+	overflow: hidden;
+	video {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 100vw;
+		height: auto;
+		left: 0;
+	}
+	&::before {
+		content: "";
+		background: rgba(0,0,0, 0.5);
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+
