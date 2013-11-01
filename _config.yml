@@ -1,2 +1,3 @@
-source: ./src
-destination: ./site
+safe: true
+lsi: false
+pygments: false
