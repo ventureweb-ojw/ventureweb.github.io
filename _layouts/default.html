@@ -2,40 +2,34 @@
 <body>
   <div id="viewport">
     {% include nav.inc.html %}
-    
-    
     <a href="#" class="menu_toggle"></a>
 		<div class="main">
-			
-		
-		
-
-    <section class='hero'>
-      <div class='panel' style='background-image: url({{ panelimg }})'>
-        <div class='container'>
-          <div class='logo'>
-            <img src='common/assets/images/VW_logo_white.png'>
+      <section class='hero'>
+        <div class='panel' style='background-image: url({{ panelimg }})'>
+          <div class='container'>
+            <div class='logo'>
+              <img src='common/assets/images/VW_logo_white.png'>
+            </div>
           </div>
         </div>
-      </div>
-      <div class='panel'>
-        <div class='container'>
-          <div>
-            <h1>{{ title }}</h1>
-            <h2>{{ subtitle }}</h2>
+        <div class='panel'>
+          <div class='container'>
+            <div>
+              <h1>{{ title }}</h1>
+              <h2>{{ subtitle }}</h2>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class='wrapper'>
-        <div class='row'>
-          {{ content }}
+      </section>
+      <section>
+        <div class='wrapper'>
+          <div class='row'>
+            {{ content }}
+          </div>
         </div>
-      </div>
-    </section>
-    
-  </div><!-- end #viewport -->
+      </section>
+		</div><!-- end main -->
+  </div><!-- end viewport -->
   
   {% include footer.inc.html %}
   
