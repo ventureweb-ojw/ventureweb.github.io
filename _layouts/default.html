@@ -1,14 +1,14 @@
 {% include html.inc.html %}
 <body>
-  <div id="viewport">
+  <div class="viewport">
     {% include nav.inc.html %}
     <a href="#" class="menu_toggle"></a>
 		<div class="main">
       <section class='hero'>
-        <div class='panel' style='background-image: url({{ panelimg }})'>
+        <div class='panel' style="background-image: url({{ panelimg }})">{{ panelimg }}
           <div class='container'>
             <div class='logo'>
-              <img src='common/assets/images/VW_logo_white.png'>
+              <img src='common/assets/images/VW_logo_white.png' alt="VentureWeb Design Ltd. Logo">
             </div>
           </div>
         </div>
@@ -16,7 +16,7 @@
           <div class='container'>
             <div>
               <h1>{{ title }}</h1>
-              <h2>{{ subtitle }}</h2>
+              <h2>{{ page.subtitle }}</h2>
             </div>
           </div>
         </div>
