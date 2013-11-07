@@ -4,26 +4,3 @@
 
 /* -------------------------------------------------- */
 
-.wrapper {
-	@extend %wrapper;
-
-	padding: 0 $spacer/2;
-	@include breakpoint($phablet) {
-		padding: 0 $spacer;
-	}
-}
-.row {
-	@include row();
-	> [class*="col"] {
-		@include column (6);
-		text-align: left;
-	}
-	&.alt {
-		.column {
-			@include column (4);
-		}
-	}
-}
-[role], footer {
-	@include clearfix;
-}
