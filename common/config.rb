@@ -6,7 +6,8 @@ require "sassy-buttons"
 require "color-schemer"
 require "modular-scale"
 require "stitch"
-require "animation"
+#require "animation"
+#require "animate"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
