@@ -29,6 +29,8 @@ body {
 
 .wrapper {
   padding: $spacer/2;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 // navigation layout
 .viewport {
@@ -180,8 +182,9 @@ footer {
 .meta {
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
-	font-family:'Proxima N W15 Xbold';
+	font-family:'Proxima Nova';
 	margin-bottom: $spacer/4;
+	font-weight: 600;
 }
 .panel {
 	position: relative;
@@ -242,7 +245,7 @@ footer {
 		background-color: $black;
 		color: $white;
 		* {
-			font-family: "Proxima N W15 Reg", sans-serif !important;
+			font-family: "Proxima Nova", sans-serif;
 		}
 		width: 20vw;
 		height: 20vw;
@@ -287,7 +290,7 @@ body.work {
 			border-right: 1px solid tint($black, 88%);
 			padding-top: $spacer/2;
 			h3 {
-				font-family:'Proxima N W15 Thin Reg';	
+				font-family:'Proxima Nova';	
 			}
 			&:last-child {
 				border: none;
