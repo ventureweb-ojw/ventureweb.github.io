@@ -26,6 +26,10 @@ body {
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: 400;
 }
+
+.wrapper {
+  padding: $spacer/2;
+}
 // navigation layout
 .viewport {
 	position: relative;
