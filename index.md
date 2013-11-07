@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 metatitle: Meta Tag Title Here
 title: About
 subtitle: Freaky Deaky
