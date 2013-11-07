@@ -151,8 +151,11 @@ header {
 }
 footer {
 	@include clearfix;
-	text-align: center;
-	padding: 0 $spacer $spacer;
+	//text-align: center;
+	//padding: 0 $spacer $spacer;
+	.wrapper {
+  	padding: 0 $spacer/2 $spacer/2;
+	}
 }
 .options {
 	list-style-type: none;
@@ -376,6 +379,13 @@ Bigger than Mobile.
 		@include vert-centre((50vw/1.175));
 		}
 }
+
+footer {
+	.wrapper {
+  	padding: 0 $spacer $spacer;
+	}
+}
+
 } // end of media query for mobile
 
 
