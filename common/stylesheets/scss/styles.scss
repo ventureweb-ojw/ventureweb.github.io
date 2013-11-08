@@ -239,7 +239,7 @@ footer {
 	}
 }
 
-.strip, .features {
+.features {
 	background-color: $black;
 	@include clearfix;
 	.panel {
@@ -248,23 +248,20 @@ footer {
 		* {
 			font-family: "Proxima Nova", sans-serif;
 		}
-		width: 20vw;
-		height: 20vw;
-		@include vert-centre(20vw);
+		width: 50vw;
+		height: 50vw;
+		@include vert-centre(50vw);
 		@include single-transition(all, $duration, $ez-e);
 	}
 
 }
 
-.strip {
-	
-}
 .features {
 	.panel {
 		&:nth-child(1) {
-			width: 40vw;
-			height: 40vw;
-			@include vert-centre(40vw);
+			width: 100vw;
+			height: 100vw;
+			@include vert-centre(100vw);
 		}
 	}
 }
@@ -377,6 +374,25 @@ Bigger than Mobile.
 		height: (50vw/1.175);
 		@include vert-centre((50vw/1.175));
 		}
+}
+
+.features {
+	.panel {
+		width: 20vw;
+		height: 20vw;
+		@include vert-centre(20vw);
+	}
+
+}
+
+.features {
+	.panel {
+		&:nth-child(1) {
+			width: 40vw;
+			height: 40vw;
+			@include vert-centre(40vw);
+		}
+	}
 }
 
 footer {
