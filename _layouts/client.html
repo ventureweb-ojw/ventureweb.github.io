@@ -9,12 +9,11 @@
         <div class='meta'>venture web &mdash; case study</div>
         <h1>{{ page.title }}</h1>
         <h2>{{ page.subtitle }}</h2>
-        <!-- <img src='common/assets/images/Juno-Primeiro-3Q.jpg'> -->
+        <img src="{{ page.leadimage }}">
         <div class='meta'>view project</div>
-        <h3>
-          <a href='{{ page.projecturl }}'>{{ page.projecturltitle }}</a>
+        <h3 class="project-url">
+          <a href="{{ page.projecturl }}" target="_blank">{{ page.projecturltitle }}</a>
         </h3>
-        aaa{{ page.test }}bbb
         </header>
         <hr>
         <section>
@@ -50,7 +49,7 @@
           <div class='panel' style='background-image: url({{ page.panelimg }})'>
             <div class='container'>
               <div class='logo'>
-                <img src='/common/assets/images/juliana_logo.png'>
+                <img src='{{ page.clientlogo }}'>
               </div>
             </div>
           </div>
@@ -65,8 +64,6 @@
   		</div><!-- end main -->
     </div><!-- end stage -->
   </div><!-- end viewport -->
-  
-  {% include footer.inc.html %}
   
   {% include scripts.inc.html %}
 </body>
