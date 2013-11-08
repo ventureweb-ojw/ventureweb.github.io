@@ -209,6 +209,9 @@ footer {
 	height: (100vw/2.35);
 	display: block;
 	margin-bottom: $spacer*2;
+	&.full {
+  	margin-bottom: 0;
+	}
 	.container {
 		position: relative;
 		z-index: 2;

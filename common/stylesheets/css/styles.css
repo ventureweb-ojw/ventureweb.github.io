@@ -640,17 +640,20 @@ footer {
       vertical-align: middle;
       padding: 28px; }
   /* line 212, ../scss/styles.scss */
+  .hero.full {
+    margin-bottom: 0; }
+  /* line 215, ../scss/styles.scss */
   .hero .container {
     position: relative;
     z-index: 2; }
-  /* line 216, ../scss/styles.scss */
+  /* line 219, ../scss/styles.scss */
   .hero .logo {
     color: white; }
-    /* line 218, ../scss/styles.scss */
+    /* line 221, ../scss/styles.scss */
     .hero .logo img {
       max-width: 180px;
       margin-bottom: 2em; }
-  /* line 223, ../scss/styles.scss */
+  /* line 226, ../scss/styles.scss */
   .hero .panel {
     background-color: white;
     width: 100%;
@@ -667,18 +670,18 @@ footer {
         display: table-cell;
         vertical-align: middle;
         padding: 28px; }
-    /* line 228, ../scss/styles.scss */
+    /* line 231, ../scss/styles.scss */
     .hero .panel:nth-child(2) {
       background-color: #00616a;
       color: white; }
-      /* line 231, ../scss/styles.scss */
+      /* line 234, ../scss/styles.scss */
       .hero .panel:nth-child(2) img {
         margin-bottom: 2em; }
-  /* line 236, ../scss/styles.scss */
+  /* line 239, ../scss/styles.scss */
   .hero.full {
     height: 100vh; }
 
-/* line 241, ../scss/styles.scss */
+/* line 244, ../scss/styles.scss */
 .strip, .features {
   background-color: #333838;
   *zoom: 1; }
@@ -689,7 +692,7 @@ footer {
   /* line 30, ../scss/global/_grid.scss */
   .strip:after, .features:after {
     clear: both; }
-  /* line 244, ../scss/styles.scss */
+  /* line 247, ../scss/styles.scss */
   .strip .panel, .features .panel {
     background-color: #333838;
     color: white;
@@ -700,7 +703,7 @@ footer {
     -moz-transition: all 260ms ease-in-out;
     -o-transition: all 260ms ease-in-out;
     transition: all 260ms ease-in-out; }
-    /* line 247, ../scss/styles.scss */
+    /* line 250, ../scss/styles.scss */
     .strip .panel *, .features .panel * {
       font-family: "Proxima Nova", sans-serif; }
     /* line 24, ../scss/global/_functions.scss */
@@ -715,10 +718,10 @@ footer {
         vertical-align: middle;
         padding: 28px; }
 
-/* line 261, ../scss/styles.scss */
+/* line 264, ../scss/styles.scss */
 body.home .features {
   margin-bottom: 112px; }
-  /* line 264, ../scss/styles.scss */
+  /* line 267, ../scss/styles.scss */
   body.home .features .panel:nth-child(1) {
     width: 40vw;
     height: 40vw;
@@ -735,49 +738,49 @@ body.home .features {
         vertical-align: middle;
         padding: 28px; }
 
-/* line 274, ../scss/styles.scss */
+/* line 277, ../scss/styles.scss */
 body.team .strip .panel {
   width: 30vw;
   -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
   filter: grayscale(90%); }
-  /* line 277, ../scss/styles.scss */
+  /* line 280, ../scss/styles.scss */
   body.team .strip .panel:hover {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%); }
-  /* line 280, ../scss/styles.scss */
+  /* line 283, ../scss/styles.scss */
   body.team .strip .panel:nth-child(2n+1) {
     width: 70vw; }
 
-/* line 287, ../scss/styles.scss */
+/* line 290, ../scss/styles.scss */
 body.work .alt {
   margin-top: -28px; }
-  /* line 289, ../scss/styles.scss */
+  /* line 292, ../scss/styles.scss */
   body.work .alt .column {
     border-right: 1px solid #e6e7e7;
     padding-top: 28px; }
-    /* line 292, ../scss/styles.scss */
+    /* line 295, ../scss/styles.scss */
     body.work .alt .column h3 {
       font-family: 'Proxima Nova'; }
-    /* line 295, ../scss/styles.scss */
+    /* line 298, ../scss/styles.scss */
     body.work .alt .column:last-child {
       border: none; }
 
-/* line 302, ../scss/styles.scss */
+/* line 305, ../scss/styles.scss */
 body.basic .hero {
   margin-bottom: 112px; }
 
 @media (min-width: 900px) {
-  /* line 309, ../scss/styles.scss */
+  /* line 312, ../scss/styles.scss */
   .set .panel {
     padding-top: 25%;
     width: 25%; }
-    /* line 311, ../scss/styles.scss */
+    /* line 314, ../scss/styles.scss */
     .set .panel:nth-child(5n+1) {
       padding-top: 50%;
       width: 50%; } }
-/* line 318, ../scss/styles.scss */
+/* line 321, ../scss/styles.scss */
 .bg {
   position: absolute;
   z-index: 0;
@@ -786,7 +789,7 @@ body.basic .hero {
   width: 100vw;
   height: 100%;
   overflow: hidden; }
-  /* line 326, ../scss/styles.scss */
+  /* line 329, ../scss/styles.scss */
   .bg video {
     position: absolute;
     top: 0;
@@ -794,7 +797,7 @@ body.basic .hero {
     width: 100vw;
     height: auto;
     left: 0; }
-  /* line 334, ../scss/styles.scss */
+  /* line 337, ../scss/styles.scss */
   .bg::before {
     content: "";
     background: rgba(0, 0, 0, 0.5);
@@ -811,10 +814,10 @@ Bigger than Mobile.
 
 -------------------------------------------------- */
 @media only screen and (min-width: 768px) {
-  /* line 354, ../scss/styles.scss */
+  /* line 357, ../scss/styles.scss */
   .wrapper {
     padding: 0 28px; }
-  /* line 362, ../scss/styles.scss */
+  /* line 365, ../scss/styles.scss */
   .row {
     display: block;
     width: 102.99145%;
@@ -827,21 +830,21 @@ Bigger than Mobile.
     /* line 30, ../scss/global/_grid.scss */
     .row:after {
       clear: both; }
-    /* line 364, ../scss/styles.scss */
+    /* line 367, ../scss/styles.scss */
     .row > [class*="col"] {
       display: inline;
       float: left;
       width: 47.00855%;
       margin: 0 1.49573%;
       text-align: left; }
-    /* line 369, ../scss/styles.scss */
+    /* line 372, ../scss/styles.scss */
     .row.alt .column {
       display: inline;
       float: left;
       width: 30.34188%;
       margin: 0 1.49573%; }
 
-  /* line 374, ../scss/styles.scss */
+  /* line 377, ../scss/styles.scss */
   [role], footer {
     *zoom: 1; }
     /* line 26, ../scss/global/_grid.scss */
@@ -852,7 +855,7 @@ Bigger than Mobile.
     [role]:after, footer:after {
       clear: both; }
 
-  /* line 379, ../scss/styles.scss */
+  /* line 382, ../scss/styles.scss */
   .hero .panel {
     width: 50vw;
     height: 42.55319vw;
@@ -869,10 +872,10 @@ Bigger than Mobile.
         vertical-align: middle;
         padding: 28px; }
 
-  /* line 387, ../scss/styles.scss */
+  /* line 390, ../scss/styles.scss */
   footer .wrapper {
     padding: 0 56px 56px; } }
   @media only screen and (min-width: 768px) and (min-width: 600px) {
-    /* line 354, ../scss/styles.scss */
+    /* line 357, ../scss/styles.scss */
     .wrapper {
       padding: 0 56px; } }
