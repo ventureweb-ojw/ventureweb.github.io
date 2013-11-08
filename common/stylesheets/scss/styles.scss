@@ -13,16 +13,24 @@
 	
 -------------------------------------------------- */
 @import "modules/typography";
-@import "modules/layout";
 @import "modules/ui";
 @import "modules/misc";
 @import "modules/responsive_type";
 
 
 /* -------------------------------------------------- */
+
 body {
-	background: #000;
 	height: 100%;
+	background-color: $white;
+	font-family: 'proxima-nova', sans-serif;
+	font-weight: 400;
+}
+
+.wrapper {
+  padding: $spacer/2;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 // navigation layout
 .viewport {
@@ -145,8 +153,11 @@ header {
 }
 footer {
 	@include clearfix;
-	text-align: center;
-	padding: 0 $spacer $spacer;
+	//text-align: center;
+	//padding: 0 $spacer $spacer;
+	.wrapper {
+  	padding: 0 $spacer/2 $spacer/2;
+	}
 }
 .options {
 	list-style-type: none;
@@ -171,8 +182,9 @@ footer {
 .meta {
 	text-transform: uppercase;
 	letter-spacing: 0.3em;
-	font-family:'Proxima N W15 Xbold';
+	font-family:'Proxima Nova';
 	margin-bottom: $spacer/4;
+	font-weight: 600;
 }
 .panel {
 	position: relative;
@@ -196,6 +208,10 @@ footer {
 	width: 100vw;
 	height: (100vw/2.35);
 	display: block;
+	margin-bottom: $spacer*2;
+	&.full {
+  	margin-bottom: 0;
+	}
 	.container {
 		position: relative;
 		z-index: 2;
@@ -209,8 +225,8 @@ footer {
 	}
 	.panel {
 		background-color: $white;
-		width: 50vw;
-		height: (50vw/1.175);
+		width: 100%;
+		height: (60vw);
 		@include vert-centre((50vw/1.175));
 		&:nth-child(2) {
 			background-color: $blue-dark;
@@ -232,7 +248,7 @@ footer {
 		background-color: $black;
 		color: $white;
 		* {
-			font-family: "Proxima N W15 Reg", sans-serif !important;
+			font-family: "Proxima Nova", sans-serif;
 		}
 		width: 20vw;
 		height: 20vw;
@@ -277,7 +293,7 @@ body.work {
 			border-right: 1px solid tint($black, 88%);
 			padding-top: $spacer/2;
 			h3 {
-				font-family:'Proxima N W15 Thin Reg';	
+				font-family:'Proxima Nova';	
 			}
 			&:last-child {
 				border: none;
@@ -329,5 +345,53 @@ body.basic {
 		right: 0;
 	}
 }
+
+/* -------------------------------------------------- 
+
+Bigger than Mobile.
+
+-------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+
+.wrapper {
+	@extend %wrapper;
+
+	padding: 0 $spacer/2;
+	@include breakpoint($phablet) {
+		padding: 0 $spacer;
+	}
+}
+.row {
+	@include row();
+	> [class*="col"] {
+		@include column (6);
+		text-align: left;
+	}
+	&.alt {
+		.column {
+			@include column (4);
+		}
+	}
+}
+[role], footer {
+	@include clearfix;
+}
+
+.hero {
+  .panel {
+		width: 50vw;
+		height: (50vw/1.175);
+		@include vert-centre((50vw/1.175));
+		}
+}
+
+footer {
+	.wrapper {
+  	padding: 0 $spacer $spacer;
+	}
+}
+
+} // end of media query for mobile
 
 

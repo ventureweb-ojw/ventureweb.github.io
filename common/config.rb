@@ -6,7 +6,8 @@ require "sassy-buttons"
 require "color-schemer"
 require "modular-scale"
 require "stitch"
-require "animation"
+#require "animation"
+#require "animate"
 
 # Set this to the root of your project when deployed:
 http_path = "/"
@@ -24,6 +25,8 @@ output_style = :nested
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
 color_output = false
+
+disable_warnings = true
 
 
 # If you prefer the indented syntax, you might want to regenerate this

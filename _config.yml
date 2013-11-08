@@ -2,5 +2,4 @@ safe: true
 lsi: false
 pygments: false
 destintation: ./_site
-auto: true
 
