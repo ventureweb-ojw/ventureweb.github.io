@@ -26,6 +26,8 @@ output_style = :nested
 # line_comments = false
 color_output = false
 
+disable_warnings = true
+
 
 # If you prefer the indented syntax, you might want to regenerate this
 # project again passing --syntax sass, or you can uncomment this:
