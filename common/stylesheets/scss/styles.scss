@@ -199,6 +199,11 @@ footer {
 		}
 	}
 }
+
+.column {
+  margin-bottom: $spacer;
+}
+
 .hero {
 	background-color: $blue-dark;
 	color: $blue;
@@ -237,6 +242,23 @@ footer {
 	&.full {
 		height: 100vh;
 	}
+}
+
+.strip {
+  background-color: $black;
+  @include clearfix;
+  h2 {
+    color: $white;
+  }
+  .panel {
+    width: 50vw;
+		height: 50vw;
+		@include vert-centre(50vw);
+		@include single-transition(all, $duration, $ez-e);
+    }
+  .panel.caption {
+    display: none;
+  }
 }
 
 .features {
@@ -354,6 +376,7 @@ Bigger than Mobile.
 }
 .row {
 	@include row();
+	padding: $spacer*2 0 0 0;
 	> [class*="col"] {
 		@include column (6);
 		text-align: left;
@@ -393,6 +416,17 @@ Bigger than Mobile.
 			@include vert-centre(40vw);
 		}
 	}
+}
+
+.strip {
+  .panel {
+    width: 20vw;
+		height: 20vw;
+		@include vert-centre(20vw);
+    }
+  .panel.caption {
+    display: block;
+  }
 }
 
 footer {
