@@ -1,19 +1,15 @@
 {% include header.inc.html %}
-<body class="work">
-  <div class="viewport">
-    {% include nav.inc.html %}
-    <div class="stage">
-      <a href="#" class="menu_toggle"></a>
-  		<div class="main">
         <header>
         <div class='meta'>venture web &mdash; case study</div>
         <h1>{{ page.title }}</h1>
         <h2>{{ page.subtitle }}</h2>
         <img src="{{ page.leadimage }}">
         <div class='meta'>view project</div>
+        {% if page.projecturl and page.projecturltitle %}
         <h3 class="project-url">
           <a href="{{ page.projecturl }}" target="_blank">{{ page.projecturltitle }}</a>
         </h3>
+        {% endif %}
         </header>
         <hr>
         <section>
@@ -60,11 +56,8 @@
               </div>
             </div>
           </div>
-        </section>
-  		</div><!-- end main -->
-    </div><!-- end stage -->
-  </div><!-- end viewport -->
-  
+        </section> 
+  {% include footer.inc.html content="false" %}
   {% include scripts.inc.html %}
 </body>
 </html>
