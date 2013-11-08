@@ -1,4 +1,4 @@
-{% include html.inc.html %}
+{% include header.inc.html %}
 <body class="work">
   <div class="viewport">
     {% include nav.inc.html %}
@@ -40,22 +40,24 @@
         </section>
         <hr>
         <footer>
+          <div class="wrapper">
           <h1>"{{ page.bigquote }}"</h1>
           <p>{{ page.bigquoteauthor }}</p>
           {{ page.awardslist }}
+          </div>
         </footer>
         <section class='hero'>
-          <div class='panel' style='background-image: url(common/assets/images/juliana_01.jpg)'>
+          <div class='panel' style='background-image: url({{ page.panelimg }})'>
             <div class='container'>
               <div class='logo'>
-                <img src='common/assets/images/juliana_logo.png'>
+                <img src='/common/assets/images/juliana_logo.png'>
               </div>
             </div>
           </div>
           <div class='panel'>
             <div class='container'>
               <div class='logo'>
-                <img src='common/assets/images/VW_logo_white.png'>
+                <img src='/common/assets/images/VW_logo_white.png'>
               </div>
             </div>
           </div>

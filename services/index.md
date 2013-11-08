@@ -3,7 +3,7 @@ layout: default
 metatitle: Services
 title: Our Services
 subtitle: Full-Service Digital Marketing
-panelimg: common/assets/images/sample.02.jpg
+panelimg: /common/assets/images/sample.02.jpg
 ---
 
 <div class='column'>

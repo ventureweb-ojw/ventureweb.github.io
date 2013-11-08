@@ -25,6 +25,8 @@ body {
 	background-color: $white;
 	font-family: 'proxima-nova', sans-serif;
 	font-weight: 400;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 .wrapper {
@@ -208,10 +210,6 @@ footer {
 	width: 100vw;
 	height: (100vw/2.35);
 	display: block;
-	margin-bottom: $spacer*2;
-	&.full {
-  	margin-bottom: 0;
-	}
 	.container {
 		position: relative;
 		z-index: 2;
@@ -257,21 +255,20 @@ footer {
 	}
 
 }
-body.home {
-	.strip {
-		
-	}
-	.features {
-		margin-bottom: $spacer*2;
-		.panel {
-			&:nth-child(1) {
-				width: 40vw;
-				height: 40vw;
-				@include vert-centre(40vw);
-			}
+
+.strip {
+	
+}
+.features {
+	.panel {
+		&:nth-child(1) {
+			width: 40vw;
+			height: 40vw;
+			@include vert-centre(40vw);
 		}
 	}
 }
+
 body.team {
 	.strip {
 		.panel {
@@ -301,11 +298,7 @@ body.work {
 		}
 	}
 }
-body.basic {
-	.hero {
-		margin-bottom: $spacer*2;
-	}
-}
+
 
 @include breakpoint($tabtop) {
 	.set {
