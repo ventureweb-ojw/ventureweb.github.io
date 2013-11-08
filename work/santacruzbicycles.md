@@ -11,6 +11,7 @@ projecturltitle: www.julianabicycles.com
 test: "<p>Hello world</p>"
 bigquote: This is probably going to solve world hunger and end all wars.
 bigquoteauthor: Jeff Schmetski, Global Authority
+panelimg: /common/assets/images/bg-2013-bronson1.jpg
 awardslist: "<h3>Best in Show Mobile</h3>
           <h4>Davey Awards</h4>
           <h3>Site of the Month</h3>
