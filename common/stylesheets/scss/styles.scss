@@ -261,6 +261,7 @@ footer {
 		height: 50vw;
 		@include vert-centre(50vw);
 		@include single-transition(all, $duration, $ez-e);
+		color: $white;
     }
   .panel.caption {
     display: none;
@@ -294,7 +295,7 @@ footer {
 	}
 }
 
-body.team {
+.team {
 	.strip {
 		.panel {
 			width: 30vw;
@@ -302,13 +303,15 @@ body.team {
 			&:hover {
 				@include filter(grayscale(0%));
 			}
-			&:nth-child(2n+1) {
-				width: 70vw;
-			}
+		}
+		.panel.team-image {
+  		width: 70vw;
 		}
 	}
 }
-body.work {
+
+/*
+.work {
 	.alt {
 		margin-top: -$spacer/2;
 		.column {
@@ -323,6 +326,7 @@ body.work {
 		}
 	}
 }
+*/
 
 
 @include breakpoint($tabtop) {
