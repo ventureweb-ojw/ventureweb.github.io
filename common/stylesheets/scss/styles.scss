@@ -50,7 +50,8 @@ body {
 		top: 0;
 		left: 0;
 		visibility: hidden;
-		width: 300px;
+		/* width: 300px; */
+		width: 75px;
 		height: 100%;
 		opacity: 1;
 		@include single-transition(all, $duration, $ez-e);
@@ -90,8 +91,8 @@ body {
 			@include transform (translate3d(0px, 0, 0));
 		}
 		.stage {
-			
-			@include transform (translate3d(300px, 0, 0));
+			/* @include transform (translate3d(300px, 0, 0)); */
+			@include transform (translate3d(75px, 0, 0));
 		}
 		.stage::after {
 			z-index: 8;
@@ -138,8 +139,9 @@ body {
 			}
 			&:nth-child(-n+4) {
 				width: 25%;
-				float: left;
-				font-size: 1.5em;
+				/* float: left; */
+				font-size: 2.0em;
+				/* font-size: 1.5em; */
 			}
 		}
 	}
@@ -223,6 +225,7 @@ footer {
 	@include vert-centre((100vw/2.35));
 	width: 100vw;
 	height: (100vw/2.35);
+	min-height: 230px;
 	display: block;
 	.container {
 		position: relative;
@@ -249,7 +252,7 @@ footer {
 		}
 	}
 	&.full {
-		height: 100vh;
+		//height: 100vh;
 	}
 }
 
@@ -371,13 +374,17 @@ footer {
 	}
 }
 
+.leader {
+  font-size: 1.9em;
+}
+
 /* -------------------------------------------------- 
 
 Bigger than Mobile.
 
 -------------------------------------------------- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
 
 .wrapper {
 	@extend %wrapper;
@@ -461,10 +468,13 @@ Bigger than Mobile.
 footer {
 	.wrapper {
   	padding: 0 $spacer $spacer;
-  	h4 {
-    	text-align: center;
-  	}
+  	text-align: center;
 	}
+}
+
+.leader {
+  font-size: 2.8em;
+  padding: 0 $spacer;
 }
 
 } // end of media query for mobile
