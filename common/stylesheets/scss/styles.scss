@@ -112,12 +112,13 @@ body {
 		color: $white;
 		width: $spacer;
 		height: $spacer;
-		display: table-cell;
+		display: inline-block;
 		vertical-align: middle;
 		font-family: "fontello";
 		content:"\e813";
 		font-size: 2em;
 		text-align: center;
+		padding-top: 8px;
 	}
 }	
 .menu {
