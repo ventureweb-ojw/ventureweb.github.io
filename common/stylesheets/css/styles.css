@@ -514,25 +514,26 @@ body {
     color: white;
     width: 56px;
     height: 56px;
-    display: table-cell;
+    display: inline-block;
     vertical-align: middle;
     font-family: "fontello";
     content: "\e813";
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    padding-top: 8px; }
 
-/* line 123, ../scss/styles.scss */
+/* line 124, ../scss/styles.scss */
 .menu {
   background: #333838; }
-  /* line 125, ../scss/styles.scss */
+  /* line 126, ../scss/styles.scss */
   .menu ul {
     list-style-type: none; }
-    /* line 127, ../scss/styles.scss */
+    /* line 128, ../scss/styles.scss */
     .menu ul li {
       height: 56px;
       display: table;
       width: 100%; }
-      /* line 131, ../scss/styles.scss */
+      /* line 132, ../scss/styles.scss */
       .menu ul li a {
         color: white;
         text-transform: uppercase;
@@ -541,14 +542,14 @@ body {
         display: table-cell;
         vertical-align: middle;
         font-weight: bold; }
-      /* line 140, ../scss/styles.scss */
+      /* line 141, ../scss/styles.scss */
       .menu ul li:nth-child(-n+4) {
         width: 25%;
         /* float: left; */
         font-size: 2.0em;
         /* font-size: 1.5em; */ }
 
-/* line 152, ../scss/styles.scss */
+/* line 153, ../scss/styles.scss */
 section {
   *zoom: 1; }
   /* line 26, ../scss/global/_grid.scss */
@@ -559,7 +560,7 @@ section {
   section:after {
     clear: both; }
 
-/* line 155, ../scss/styles.scss */
+/* line 156, ../scss/styles.scss */
 header {
   *zoom: 1;
   text-align: center;
@@ -572,7 +573,7 @@ header {
   header:after {
     clear: both; }
 
-/* line 161, ../scss/styles.scss */
+/* line 162, ../scss/styles.scss */
 footer {
   *zoom: 1; }
   /* line 26, ../scss/global/_grid.scss */
@@ -582,23 +583,23 @@ footer {
   /* line 30, ../scss/global/_grid.scss */
   footer:after {
     clear: both; }
-  /* line 165, ../scss/styles.scss */
+  /* line 166, ../scss/styles.scss */
   footer .wrapper {
     padding: 0 28px 28px; }
 
-/* line 169, ../scss/styles.scss */
+/* line 170, ../scss/styles.scss */
 .options {
   list-style-type: none; }
-  /* line 171, ../scss/styles.scss */
+  /* line 172, ../scss/styles.scss */
   .options li {
     height: 56px;
     display: table;
     width: 100%;
     border-top: 1px solid #e6e7e7; }
-    /* line 176, ../scss/styles.scss */
+    /* line 177, ../scss/styles.scss */
     .options li:first-child {
       border: none; }
-    /* line 179, ../scss/styles.scss */
+    /* line 180, ../scss/styles.scss */
     .options li a {
       color: #008f9d;
       text-transform: uppercase;
@@ -607,7 +608,7 @@ footer {
       vertical-align: middle;
       font-weight: bold; }
 
-/* line 189, ../scss/styles.scss */
+/* line 190, ../scss/styles.scss */
 .meta {
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -615,27 +616,27 @@ footer {
   margin-bottom: 14px;
   font-weight: 600; }
 
-/* line 197, ../scss/styles.scss */
+/* line 198, ../scss/styles.scss */
 .project-url {
   font-size: 1.07143em;
   line-height: 1.46667em;
   letter-spacing: 0.0em; }
 
-/* line 202, ../scss/styles.scss */
+/* line 203, ../scss/styles.scss */
 .panel {
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
   float: left; }
-  /* line 208, ../scss/styles.scss */
+  /* line 209, ../scss/styles.scss */
   .panel .container div {
     padding: 28px; }
 
-/* line 214, ../scss/styles.scss */
+/* line 215, ../scss/styles.scss */
 .column {
   margin-bottom: 56px; }
 
-/* line 218, ../scss/styles.scss */
+/* line 219, ../scss/styles.scss */
 .hero {
   background-color: #00616a;
   color: #008f9d;
@@ -658,18 +659,18 @@ footer {
       display: table-cell;
       vertical-align: middle;
       padding: 28px; }
-  /* line 230, ../scss/styles.scss */
+  /* line 231, ../scss/styles.scss */
   .hero .container {
     position: relative;
     z-index: 2; }
-  /* line 234, ../scss/styles.scss */
+  /* line 235, ../scss/styles.scss */
   .hero .logo {
     color: white; }
-    /* line 236, ../scss/styles.scss */
+    /* line 237, ../scss/styles.scss */
     .hero .logo img {
       max-width: 180px;
       margin-bottom: 2em; }
-  /* line 241, ../scss/styles.scss */
+  /* line 242, ../scss/styles.scss */
   .hero .panel {
     background-color: white;
     width: 100%;
@@ -686,15 +687,15 @@ footer {
         display: table-cell;
         vertical-align: middle;
         padding: 28px; }
-    /* line 246, ../scss/styles.scss */
+    /* line 247, ../scss/styles.scss */
     .hero .panel:nth-child(2) {
       background-color: #00616a;
       color: white; }
-      /* line 249, ../scss/styles.scss */
+      /* line 250, ../scss/styles.scss */
       .hero .panel:nth-child(2) img {
         margin-bottom: 2em; }
 
-/* line 259, ../scss/styles.scss */
+/* line 260, ../scss/styles.scss */
 .strip {
   background-color: #333838;
   *zoom: 1; }
@@ -705,10 +706,10 @@ footer {
   /* line 30, ../scss/global/_grid.scss */
   .strip:after {
     clear: both; }
-  /* line 262, ../scss/styles.scss */
+  /* line 263, ../scss/styles.scss */
   .strip h2 {
     color: white; }
-  /* line 265, ../scss/styles.scss */
+  /* line 266, ../scss/styles.scss */
   .strip .panel {
     width: 50vw;
     height: 50vw;
@@ -729,11 +730,11 @@ footer {
         display: table-cell;
         vertical-align: middle;
         padding: 28px; }
-  /* line 272, ../scss/styles.scss */
+  /* line 273, ../scss/styles.scss */
   .strip .panel.caption {
     display: none; }
 
-/* line 277, ../scss/styles.scss */
+/* line 278, ../scss/styles.scss */
 .features {
   background-color: #333838;
   *zoom: 1; }
@@ -744,7 +745,7 @@ footer {
   /* line 30, ../scss/global/_grid.scss */
   .features:after {
     clear: both; }
-  /* line 280, ../scss/styles.scss */
+  /* line 281, ../scss/styles.scss */
   .features .panel {
     background-color: #333838;
     color: white;
@@ -755,7 +756,7 @@ footer {
     -moz-transition: all 260ms ease-in-out;
     -o-transition: all 260ms ease-in-out;
     transition: all 260ms ease-in-out; }
-    /* line 283, ../scss/styles.scss */
+    /* line 284, ../scss/styles.scss */
     .features .panel * {
       font-family: "Proxima Nova", sans-serif; }
     /* line 24, ../scss/global/_functions.scss */
@@ -770,7 +771,7 @@ footer {
         vertical-align: middle;
         padding: 28px; }
 
-/* line 296, ../scss/styles.scss */
+/* line 297, ../scss/styles.scss */
 .features .panel:nth-child(1) {
   width: 100vw;
   height: 100vw;
@@ -787,18 +788,18 @@ footer {
       vertical-align: middle;
       padding: 28px; }
 
-/* line 306, ../scss/styles.scss */
+/* line 307, ../scss/styles.scss */
 .team .strip .panel {
   width: 100vw;
   -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
   filter: grayscale(90%); }
-  /* line 309, ../scss/styles.scss */
+  /* line 310, ../scss/styles.scss */
   .team .strip .panel:hover {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     filter: grayscale(0%); }
-/* line 313, ../scss/styles.scss */
+/* line 314, ../scss/styles.scss */
 .team .strip .panel.team-image {
   width: 100vw; }
 
@@ -820,15 +821,15 @@ footer {
 }
 */
 @media (min-width: 900px) {
-  /* line 340, ../scss/styles.scss */
+  /* line 341, ../scss/styles.scss */
   .set .panel {
     padding-top: 25%;
     width: 25%; }
-    /* line 342, ../scss/styles.scss */
+    /* line 343, ../scss/styles.scss */
     .set .panel:nth-child(5n+1) {
       padding-top: 50%;
       width: 50%; } }
-/* line 349, ../scss/styles.scss */
+/* line 350, ../scss/styles.scss */
 .bg {
   position: absolute;
   z-index: 0;
@@ -837,7 +838,7 @@ footer {
   width: 100vw;
   height: 100%;
   overflow: hidden; }
-  /* line 357, ../scss/styles.scss */
+  /* line 358, ../scss/styles.scss */
   .bg video {
     position: absolute;
     top: 0;
@@ -845,7 +846,7 @@ footer {
     width: 100vw;
     height: auto;
     left: 0; }
-  /* line 365, ../scss/styles.scss */
+  /* line 366, ../scss/styles.scss */
   .bg::before {
     content: "";
     background: rgba(0, 0, 0, 0.5);
@@ -856,7 +857,7 @@ footer {
     bottom: 0;
     right: 0; }
 
-/* line 377, ../scss/styles.scss */
+/* line 378, ../scss/styles.scss */
 .leader {
   font-size: 1.9em; }
 
@@ -866,10 +867,10 @@ Bigger than Mobile.
 
 -------------------------------------------------- */
 @media only screen and (min-width: 800px) {
-  /* line 389, ../scss/styles.scss */
+  /* line 390, ../scss/styles.scss */
   .wrapper {
     padding: 0 28px; }
-  /* line 397, ../scss/styles.scss */
+  /* line 398, ../scss/styles.scss */
   .row {
     display: block;
     width: 102.99145%;
@@ -883,21 +884,21 @@ Bigger than Mobile.
     /* line 30, ../scss/global/_grid.scss */
     .row:after {
       clear: both; }
-    /* line 400, ../scss/styles.scss */
+    /* line 401, ../scss/styles.scss */
     .row > [class*="col"] {
       display: inline;
       float: left;
       width: 47.00855%;
       margin: 0 1.49573%;
       text-align: left; }
-    /* line 405, ../scss/styles.scss */
+    /* line 406, ../scss/styles.scss */
     .row.alt .column {
       display: inline;
       float: left;
       width: 30.34188%;
       margin: 0 1.49573%; }
 
-  /* line 410, ../scss/styles.scss */
+  /* line 411, ../scss/styles.scss */
   [role], footer {
     *zoom: 1; }
     /* line 26, ../scss/global/_grid.scss */
@@ -908,7 +909,7 @@ Bigger than Mobile.
     [role]:after, footer:after {
       clear: both; }
 
-  /* line 415, ../scss/styles.scss */
+  /* line 416, ../scss/styles.scss */
   .hero .panel {
     width: 50vw;
     height: 42.55319vw;
@@ -925,13 +926,13 @@ Bigger than Mobile.
         vertical-align: middle;
         padding: 28px; }
 
-  /* line 422, ../scss/styles.scss */
+  /* line 423, ../scss/styles.scss */
   .project-url {
     font-size: 1.42857em;
     line-height: 1.1em;
     letter-spacing: 0.3em; }
 
-  /* line 428, ../scss/styles.scss */
+  /* line 429, ../scss/styles.scss */
   .features .panel {
     width: 20vw;
     height: 20vw;
@@ -948,7 +949,7 @@ Bigger than Mobile.
         vertical-align: middle;
         padding: 28px; }
 
-  /* line 438, ../scss/styles.scss */
+  /* line 439, ../scss/styles.scss */
   .features .panel:nth-child(1) {
     width: 40vw;
     height: 40vw;
@@ -965,7 +966,7 @@ Bigger than Mobile.
         vertical-align: middle;
         padding: 28px; }
 
-  /* line 447, ../scss/styles.scss */
+  /* line 448, ../scss/styles.scss */
   .strip .panel {
     width: 20vw;
     height: 20vw;
@@ -981,27 +982,27 @@ Bigger than Mobile.
         display: table-cell;
         vertical-align: middle;
         padding: 28px; }
-  /* line 452, ../scss/styles.scss */
+  /* line 453, ../scss/styles.scss */
   .strip .panel.caption {
     display: block; }
 
-  /* line 459, ../scss/styles.scss */
+  /* line 460, ../scss/styles.scss */
   .team .strip .panel {
     width: 30vw; }
-  /* line 462, ../scss/styles.scss */
+  /* line 463, ../scss/styles.scss */
   .team .strip .panel.team-image {
     width: 70vw; }
 
-  /* line 469, ../scss/styles.scss */
+  /* line 470, ../scss/styles.scss */
   footer .wrapper {
     padding: 0 56px 56px;
     text-align: center; }
 
-  /* line 475, ../scss/styles.scss */
+  /* line 476, ../scss/styles.scss */
   .leader {
     font-size: 2.8em;
     padding: 0 56px; } }
   @media only screen and (min-width: 800px) and (min-width: 600px) {
-    /* line 389, ../scss/styles.scss */
+    /* line 390, ../scss/styles.scss */
     .wrapper {
       padding: 0 56px; } }
