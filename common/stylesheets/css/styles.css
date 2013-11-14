@@ -427,7 +427,7 @@ body {
     left: 0;
     visibility: hidden;
     /* width: 300px; */
-    width: 100px;
+    width: 75px;
     height: 100%;
     opacity: 1;
     -webkit-transition: all 260ms ease-in-out;
@@ -492,11 +492,11 @@ body {
     /* line 93, ../scss/styles.scss */
     .viewport.open .stage {
       /* @include transform (translate3d(300px, 0, 0)); */
-      -webkit-transform: translate3d(100px, 0, 0);
-      -moz-transform: translate3d(100px, 0, 0);
-      -ms-transform: translate3d(100px, 0, 0);
-      -o-transform: translate3d(100px, 0, 0);
-      transform: translate3d(100px, 0, 0); }
+      -webkit-transform: translate3d(75px, 0, 0);
+      -moz-transform: translate3d(75px, 0, 0);
+      -ms-transform: translate3d(75px, 0, 0);
+      -o-transform: translate3d(75px, 0, 0);
+      transform: translate3d(75px, 0, 0); }
     /* line 97, ../scss/styles.scss */
     .viewport.open .stage::after {
       z-index: 8;
@@ -693,9 +693,6 @@ footer {
       /* line 249, ../scss/styles.scss */
       .hero .panel:nth-child(2) img {
         margin-bottom: 2em; }
-  /* line 254, ../scss/styles.scss */
-  .hero.full {
-    height: 100vh; }
 
 /* line 259, ../scss/styles.scss */
 .strip {
@@ -868,7 +865,7 @@ footer {
 Bigger than Mobile.
 
 -------------------------------------------------- */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
   /* line 389, ../scss/styles.scss */
   .wrapper {
     padding: 0 28px; }
@@ -1004,7 +1001,7 @@ Bigger than Mobile.
   .leader {
     font-size: 2.8em;
     padding: 0 56px; } }
-  @media only screen and (min-width: 768px) and (min-width: 600px) {
+  @media only screen and (min-width: 800px) and (min-width: 600px) {
     /* line 389, ../scss/styles.scss */
     .wrapper {
       padding: 0 56px; } }

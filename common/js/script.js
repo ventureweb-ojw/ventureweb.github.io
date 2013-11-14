@@ -152,5 +152,7 @@ $(function () {
 		});
 	}
 	
+	var wheight = $( window ).height();
+	$('section.full').height(wheight);
 	
 });
