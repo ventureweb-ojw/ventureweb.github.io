@@ -7,7 +7,7 @@ panelimg: /common/assets/images/sample.02.jpg
 ---
 
 Marketing
----------
+=========
 We work with our clients on a yearly basis to plan, execute and measure online marketing strategies and campaigns. 
 
 We believe that great online marketing starts with a collaborative results-driven plan that guides the online marketing efforts throughout the year. We become an extension of our client?s marketing team and we work together to develop unique strategies and campaigns based on the goals and objectives that are shared with us. Our marketing services include:
@@ -30,7 +30,8 @@ Web development and marketing experience come together with a bang in our online
 ####Performance Measurement and Tracking
 The Internet offers levels of tracking and reporting never before experienced in traditional marketing.  Based on company objectives, we measure and report on all of our client?s online efforts from the website to online campaigns. Our reporting tools and follow-up help prioritize online marketing activities based on ROI, performance and budget so that clients can resource accordingly.
 
-##Design
+Design
+======
 
 ####Art Direction
 A website needs to be more than just pretty. Unique and creative visuals are essential to communicate your message, but online interaction with your brand is more than one-dimensional. Our award-winning art direction is one of the key pieces in all of our website builds.
@@ -41,7 +42,8 @@ You only have a few seconds to engage your site visitors or they?re gone. Once y
 ####Brand Development
 Nowhere is branding more important than online. In this increasingly cluttered and unmonitored realm of content and opinions, you not only need to effectively establish your brand, you must also monitor and reinforce it, as well. We provide full branding services from a refresh to a brand new brand.
 
-##Strategy
+Strategy
+=========
 
 Online business can be complex. Our team of diverse and talented team makes sense of the opinions, emerging technologies, and social considerations to deliver a comprehensive online strategy.
 
@@ -57,14 +59,16 @@ Web development and marketing experience come together with a bang in our online
 ####Competitive Research
 Do you know what your competition is doing and if their efforts are working? VW  provides competitive reviews to ensure we understand not only the competitive set, but also where opportunities exist and how to convert them to maximum effect.
 
-##Technical Development
+Technical Development
+=====================
 
 We believe that you wouldn't build a house without plans, start a company without a business plan or bake a cake without a recipie. In the same vein, you would be remiss to invest heavily in the development and design of a website without having any plans in place. 
 
 ####Information Architecture and Wireframes
 The development of Internet architecture and the production of wireframing documentation is imperative to achieve a successful outcome for any website project.
 
-##Our Favourite Website Platforms
+Our Favourite Website Platforms
+===============================
 
 ####Drupal
 We are huge Drupal fans and while not a Drupal shop, we do use Drupal in 90% of our projects. Drupal is our weapon of choice when building websites. We've used it with great success over the last three years and strongly recommend its consideration in any new projects for its extensive and flexible structure. It helps that our developers are magicians when it comes to Drupal.
