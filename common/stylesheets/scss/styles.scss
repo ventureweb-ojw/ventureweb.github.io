@@ -225,6 +225,7 @@ footer {
 	@include vert-centre((100vw/2.35));
 	width: 100vw;
 	height: (100vw/2.35);
+	min-height: 230px;
 	display: block;
 	.container {
 		position: relative;
@@ -373,6 +374,10 @@ footer {
 	}
 }
 
+.leader {
+  font-size: 1.9em;
+}
+
 /* -------------------------------------------------- 
 
 Bigger than Mobile.
@@ -465,6 +470,11 @@ footer {
   	padding: 0 $spacer $spacer;
   	text-align: center;
 	}
+}
+
+.leader {
+  font-size: 2.8em;
+  padding: 0 $spacer;
 }
 
 } // end of media query for mobile
