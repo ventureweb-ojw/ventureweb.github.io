@@ -784,7 +784,7 @@ footer {
 
 /* line 300, ../scss/styles.scss */
 .team .strip .panel {
-  width: 30vw;
+  width: 100vw;
   -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
   filter: grayscale(90%); }
@@ -795,7 +795,7 @@ footer {
     filter: grayscale(0%); }
 /* line 307, ../scss/styles.scss */
 .team .strip .panel.team-image {
-  width: 70vw; }
+  width: 100vw; }
 
 /*
 .work {
@@ -976,7 +976,14 @@ Bigger than Mobile.
   .strip .panel.caption {
     display: block; }
 
-  /* line 448, ../scss/styles.scss */
+  /* line 449, ../scss/styles.scss */
+  .team .strip .panel {
+    width: 30vw; }
+  /* line 452, ../scss/styles.scss */
+  .team .strip .panel.team-image {
+    width: 70vw; }
+
+  /* line 459, ../scss/styles.scss */
   footer .wrapper {
     padding: 0 56px 56px; } }
   @media only screen and (min-width: 768px) and (min-width: 600px) {

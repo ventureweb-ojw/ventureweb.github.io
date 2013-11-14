@@ -298,14 +298,14 @@ footer {
 .team {
 	.strip {
 		.panel {
-			width: 30vw;
+			width: 100vw;
 			@include filter(grayscale(90%));
 			&:hover {
 				@include filter(grayscale(0%));
 			}
 		}
 		.panel.team-image {
-  		width: 70vw;
+  		width: 100vw;
 		}
 	}
 }
@@ -442,6 +442,17 @@ Bigger than Mobile.
   .panel.caption {
     display: block;
   }
+}
+
+.team {
+	.strip {
+		.panel {
+			width: 30vw;
+		}
+		.panel.team-image {
+  		width: 70vw;
+		}
+	}
 }
 
 footer {
