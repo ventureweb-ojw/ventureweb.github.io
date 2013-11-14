@@ -992,10 +992,8 @@ Bigger than Mobile.
 
   /* line 464, ../scss/styles.scss */
   footer .wrapper {
-    padding: 0 56px 56px; }
-    /* line 466, ../scss/styles.scss */
-    footer .wrapper h4 {
-      text-align: center; } }
+    padding: 0 56px 56px;
+    text-align: center; } }
   @media only screen and (min-width: 768px) and (min-width: 600px) {
     /* line 384, ../scss/styles.scss */
     .wrapper {
