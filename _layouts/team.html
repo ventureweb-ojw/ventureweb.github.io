@@ -1,5 +1,4 @@
 {% include header.inc.html %}
-   
       <section class='hero'>
         <div class='panel' style="background-image: url({{ page.panelimg }})">
           <div class='container'>
@@ -17,14 +16,6 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class='wrapper'>
-          <div class='row'>
-            {{ content }}
-          </div>
-        </div>
-      </section>
-  
-  {% include footer.inc.html %}
-  
-  {% include scripts.inc.html %}
+      {{ content }}
+{% include footer.inc.html %}
+{% include scripts.inc.html %}
