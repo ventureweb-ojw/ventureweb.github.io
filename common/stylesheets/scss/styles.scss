@@ -50,8 +50,7 @@ body {
 		top: 0;
 		left: 0;
 		visibility: hidden;
-		/* width: 300px; */
-		width: 75px;
+		width: 300px;
 		height: 100%;
 		opacity: 1;
 		@include single-transition(all, $duration, $ez-e);
@@ -91,8 +90,7 @@ body {
 			@include transform (translate3d(0px, 0, 0));
 		}
 		.stage {
-			/* @include transform (translate3d(300px, 0, 0)); */
-			@include transform (translate3d(75px, 0, 0));
+			@include transform (translate3d(300px, 0, 0));
 		}
 		.stage::after {
 			z-index: 8;
@@ -138,11 +136,10 @@ body {
 				vertical-align: middle;
 				font-weight: bold;
 			}
-			&:nth-child(-n+4) {
+			&:nth-child(-n+3) {
 				width: 25%;
-				/* float: left; */
-				font-size: 2.0em;
-				/* font-size: 1.5em; */
+				float: left;
+				font-size: 1.5em;
 			}
 		}
 	}
