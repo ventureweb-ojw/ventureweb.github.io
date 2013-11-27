@@ -1,4 +1,4 @@
-safe: true
+safe: false
 lsi: false
-pygments: false
+pygments: true
 destintation: ./_site
