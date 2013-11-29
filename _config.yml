@@ -1,4 +1,6 @@
-safe: true
-lsi: false
-pygments: false
-destintation: ./_site
+# safe: false
+# lsi: false
+# pygments: true
+# destintation: ./_site
+
+destination: ./_site

@@ -1,0 +1,17 @@
+<section class="team">
+           
+{% for item in site.data.[page.datafile] %}
+  <div class="strip">
+  <a class="panel team-image" href="{{ item.link }}" style="background-image: url(/common/assets/images/{{ item.image }});">&nbsp;</a>
+  <div class="panel">
+    <div class="container">
+      <div>
+        <h3>{{ item.title }}</h3>
+        <h4>{{ item.subtitle }}</h4>
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+</section>
