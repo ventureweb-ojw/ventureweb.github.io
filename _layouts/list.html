@@ -18,21 +18,7 @@
   </div>
 </section>
 
-<section class="team">      
-{% for project in site.data.projects %}
-<div class="strip">
-  <a class="panel team-image" href="{{ project.page }}" style="background-image: url(/common/assets/images/{{ project.image }});">&nbsp;</a>
-  <div class="panel">
-    <div class="container">
-      <div>
-        <h3>{{ project.client }}</h3>
-        <h4>{{ project.project_title }}</h4>
-      </div>
-    </div>
-  </div>
-</div>
-{% endfor %}
-</section>
+{% include item.html %}
 
 {% include footer.inc.html %}
 {% include scripts.inc.html %}
